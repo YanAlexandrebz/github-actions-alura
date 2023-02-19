@@ -12,11 +12,11 @@ on:
 jobs:
 
   test:
-    runs-on: ${{ matrix.OS }}
+    runs-on: Test on GO version ${{ matrix.go_version }} and Operation System ${{ matrix.OS }}
     strategy:
       matrix:
-        go_version: ['1.19', '1.18', '>=1.18']
-        OS: ['ubuntu-latest', 'windows-11']
+        go_version: ['1.19', '>=1.18']
+        OS: ['ubuntu-latest', 'windows-latest']
     steps:
     - uses: actions/checkout@v3
 
