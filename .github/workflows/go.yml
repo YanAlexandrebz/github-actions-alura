@@ -12,7 +12,7 @@ on:
 jobs:
 
   test:
-    runs-on: Test on GO version ${{ matrix.go_version }} and ${{ secrets.TESTE }}
+    runs-on: Test on GO version ${{ matrix.go_version }}
     strategy:
       matrix:
         go_version: ['1.19', '>=1.18']
